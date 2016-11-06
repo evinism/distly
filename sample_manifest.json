@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "node1", "source": "sample_src.js"}
+    {"id": "node2", "source": "sample_src.js"}
+  ],
+  "model": "default",
+  "entry": "random",
+  "connectivity": "full",
+}
