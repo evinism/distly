@@ -3,14 +3,15 @@ import {tick} from '../src/models/edge/basic';
 console.log('run basic edge simulation:');
 const edge = tick();
 edge.next();
-let time = 0;
+const td = 0.125;
 
+let time = 0;
 function sim(msg){
   console.log(`--- time ${time} ---`)
   console.log(`in: "${msg}"`);
-  const response = edge.next({time, data: [msg]}).value;
+  const response = edge.next({td, data: [msg]}).value;
   console.log(`out: [${response}]`);
-  time++;
+  time += td;
 };
 
 sim('foo');

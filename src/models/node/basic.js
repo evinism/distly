@@ -1,5 +1,5 @@
 /* v1 interface
- * should export tick*(time) => status: oneOf(['nominal', 'down', 'destroyed'])
+ * should export tick*(td) => status: oneOf(['nominal', 'down', 'destroyed'])
  */
 
 // Always on, very easy.

@@ -17,8 +17,9 @@
   ],
   "scripts": {
     "realtime": "babel-node scripts/realtime.js",
-    "edge_basic": "babel-node scripts/edge_basic.js",
-    "hello": "babel-node scripts/hello.js"
+    "test-edge-basic": "babel-node scripts/test_edge_basic.js",
+    "test-sample-src": "babel-node scripts/test_sample_src.js",
+    "babel-node": "babel-node"
   },
   "author": "Evin Sellin",
   "license": "MIT",
