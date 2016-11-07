@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "realtime": "babel-node scripts/realtime.js",
+    "edge_basic": "babel-node scripts/edge_basic.js",
     "hello": "babel-node scripts/hello.js"
   },
   "author": "Evin Sellin",
