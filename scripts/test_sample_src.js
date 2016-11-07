@@ -1,4 +1,4 @@
-import { tick } from '../sample_src.js';
+import Tick from '../sample_src.js';
 
 
 let readArr = [];
@@ -16,13 +16,13 @@ function write({dest, msg}){
 }
 
 // Initialize node
-const node = tick({id: 'node1', read, write});
-node.next();
+const tick = Tick({id: 'node1', read, write});
+tick.next();
 
 const td = 0.125;
 function sim(msg){
   if(msg){ readArr.push(msg); }
-  node.next({td});
+  tick.next({td});
 };
 
 // Simulate for 10 seconds

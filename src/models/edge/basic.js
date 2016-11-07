@@ -6,7 +6,7 @@
  */
 
  // zero delay model
-export function* tick(){
+export default function* tick(){
   let data;
   while(true){
     const {td, data: newData} = yield data;

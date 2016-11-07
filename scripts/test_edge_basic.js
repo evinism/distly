@@ -1,7 +1,7 @@
-import {tick} from '../src/models/edge/basic';
+import Edge from '../src/models/edge/basic';
 
 console.log('run basic edge simulation:');
-const edge = tick();
+const edge = Edge();
 edge.next();
 const td = 0.125;
 

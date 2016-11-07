@@ -4,7 +4,11 @@
   "description": "a stochastic distributed system simulator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "realtime": "babel-node scripts/realtime.js",
+    "test-edge-basic": "babel-node scripts/test_edge_basic.js",
+    "test-sample-src": "babel-node scripts/test_sample_src.js",
+    "test-sample-node": "babel-node scripts/test_sample_node.js",
+    "babel-node": "babel-node"
   },
   "repository": {
     "type": "git",
@@ -15,12 +19,6 @@
     "systems",
     "stochastic"
   ],
-  "scripts": {
-    "realtime": "babel-node scripts/realtime.js",
-    "test-edge-basic": "babel-node scripts/test_edge_basic.js",
-    "test-sample-src": "babel-node scripts/test_sample_src.js",
-    "babel-node": "babel-node"
-  },
   "author": "Evin Sellin",
   "license": "MIT",
   "bugs": {
@@ -28,7 +26,8 @@
   },
   "homepage": "https://github.com/evinism/distly#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "project-name-generator": "^2.1.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

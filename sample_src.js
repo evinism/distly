@@ -9,7 +9,7 @@
 }
 */
 
-export function* tick({id, read, write}){
+export default function* tick({id, read, write}){
   let timeSinceLastBroadcast = 0;
   let localTime = 0;
   const maxTimeBetweenBroadcasts = 100;
@@ -20,7 +20,7 @@ export function* tick({id, read, write}){
     localTime += td;
     timeSinceLastBroadcast += td;
     if(Math.random() * maxTimeBetweenBroadcasts < timeSinceLastBroadcast){
-      write({id, msg: `id ${id} broadcast at localTime ${localTime}!`});
+      write({id, msg: `id ${id} broadcast localTime ${localTime}!`});
       timeSinceLastBroadcast = 0;
     }
     if(recv.length == 0){

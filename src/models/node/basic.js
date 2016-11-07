@@ -3,6 +3,6 @@
  */
 
 // Always on, very easy.
-export function* tick(){
+export default function* tick(){
   yield 'nominal';
 };
